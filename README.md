@@ -23,3 +23,4 @@ I gathered my data using the [Spoonacular API](https://spoonacular.com/food-api)
 - Find another way to gather more recipe data
 - Play around with different model parameters and models
 - Create a visual interface for this project
+- Try to integrate title and instruction contexts
