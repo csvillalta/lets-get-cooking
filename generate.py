@@ -14,6 +14,7 @@ for i in range(30):
                                                     return_as_list=True)
 
     title = "Title: {}".format("".join(generated_title))
+    generated_instructions = [instruction+"\n" for instruction in generated_instructions]
     file_name = "samples/recipe_sample_{}.txt".format(i)
     with open(file_name, "w+") as f:
         f.write(title)
