@@ -1,3 +1,5 @@
+$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
 $(document).ready(function(){
   $("#loading").hide()
   $("#title").hide()
@@ -18,7 +20,7 @@ $(document).ready(function(){
   });
 
   $("#get_recipe").click(function(){
-    $.getJSON("http://127.0.0.1:5000/_get_new_recipe", function(data){
+    $.getJSON($SCRIPT_ROOT + "/_get_new_recipe", function(data){
       $("#title").html(data["title"]);
       $("#instructions").html(data["instructions"]);
     });
