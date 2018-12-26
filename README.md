@@ -17,10 +17,3 @@ The original plan was to try to integrate some information from the generated ti
 ## Corpus
 
 I gathered my data using the [Spoonacular API](https://spoonacular.com/food-api) and the [Spoonacular Python wrapper](https://github.com/johnwmillr/SpoonacularAPI). Unfortunately, the wrapper stopped working halfway through this project, so I did not end up collecting as much data as I would have liked. I have left the script to gather the recipes for documentation purposes.
-
-## Future Plans
-
-- Find another way to gather more recipe data
-- Play around with different model parameters and models
-- Create a visual interface for this project
-- Try to integrate title and instruction contexts
