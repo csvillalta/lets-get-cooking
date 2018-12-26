@@ -1,8 +1,8 @@
 from textgenrnn import textgenrnn
 from random import randint
 
-title_generator = textgenrnn('title_generator_weights.hdf5')
-instruction_generator = textgenrnn('instruction_generator_weights.hdf5')
+title_generator = textgenrnn('models/title_generator_weights.hdf5')
+instruction_generator = textgenrnn('models/instruction_generator_weights.hdf5')
 
 def generate():
     recipe_lines = randint(10,30)
