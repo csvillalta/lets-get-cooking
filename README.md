@@ -1,7 +1,5 @@
 # Let's Get Cooking
 
-Final project for CMSC 208: Speech Synthesis and Recognition
-
 ## Concept
 
 I wanted to create a simple recipe generator using a recurrent neural network. I chose Max Woolf's implementation of [textgenrnn](https://github.com/minimaxir/textgenrnn) as my language model due to it's ease of use and flexibility. In designing this project I aimed more to generate humurous yet understandable recipes.
