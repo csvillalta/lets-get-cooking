@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#loading").hide()
+        $("#get_recipe").click(function(){
+          $.ajax({
+            type: "GET",
+            url: {{ request.script_root|tojson|safe }} + "/_get_new_recipe",
+            success: function(data){
+              $("#title").html(data["title"]);
+              $("#instructions").html(data["instructions"]);
+            }
+          });
+        });
+        $(document).ajaxStart(function(){
+          $("#title").hide();
+          $("#instructions").hide();
+          $("#get_recipe").hide()
+          $("#loading").show();
+        });
+        $(document).ajaxStop(function(){
+          $("#loading").hide();
+          $("#title").show();
+          $("#instructions").show();
+          $("#get_recipe").show()
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 id="loading">Loading...</h1>
+    <h1 id="title">{{ recipe_title }}</h1>
+    <p id="instructions">{{ recipe_instructions }}</p>
+    <button id="get_recipe">new recipe</button>
+  </body>
+</html>
