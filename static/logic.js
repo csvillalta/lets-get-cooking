@@ -1,4 +1,4 @@
-$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+$SCRIPT_ROOT = "http://127.0.0.1:5000";
 
 $(document).ready(function(){
   $("#loading").hide()
