@@ -1,22 +1,36 @@
-h1 {font-size: 40pt;
+h1 {
+	font-size: 40pt;
     text-align: center;
-    margin: 0 auto;}
-#loading {font-family: 'Open-Sans', sans-serif;}
-#title {font-family: 'Lobster', cursive;}
-#instructions {font-family: 'Open-Sans', sans-serif;
-              font-size: 18pt;
-              width: 80%;
-              margin: 0 auto;
-              word-wrap: break-word;
-              padding: 25px 25px;}
-#get_recipe {background-color: #c96801;
-            border: none;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20pt;
-            border-radius: 8px;
-            padding: 14px 40px;
-            margin: 0 auto;
-            display: block;
-            font-family: 'Open-Sans', sans-serif;}
+    margin: 0 auto;
+}
+
+#loading {
+	font-family: 'Open-Sans', sans-serif;
+}
+
+#title {
+	font-family: 'Lobster', cursive;
+}
+
+#instructions {
+	font-family: 'Open-Sans', sans-serif;
+    font-size: 18pt;
+    width: 80%;
+	margin: 0 auto;
+    word-wrap: break-word;
+    padding: 25px 25px;
+}
+
+#get_recipe {
+	background-color: #c96801;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20pt;
+    border-radius: 8px;
+    padding: 14px 40px;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Open-Sans', sans-serif;
+}
